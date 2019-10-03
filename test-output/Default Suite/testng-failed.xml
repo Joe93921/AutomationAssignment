@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="mavendemo(failed)">
+    <classes>
+      <class name="test.DemoAppTest">
+        <methods>
+          <include name="setup"/>
+          <include name="AccountCreate"/>
+          <include name="ProductCheckout"/>
+          <include name="close"/>
+          <include name="Downloadpdf"/>
+          <include name="SearchData"/>
+        </methods>
+      </class> <!-- test.DemoAppTest -->
+    </classes>
+  </test> <!-- mavendemo(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

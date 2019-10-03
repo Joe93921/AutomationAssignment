@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="listener.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="AutomationAssignment(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.DemoAppTest">
+        <methods>
+          <include name="setup"/>
+          <include name="InvalidDataCase"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- test.DemoAppTest -->
+    </classes>
+  </test> <!-- AutomationAssignment(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

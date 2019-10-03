@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listener.ListenerTest"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="AutomationAssignment">
+        <parameter name="browser" value="chrome"/>
+        <classes><class name="test.DemoAppTest"><methods>
+            <include name="AccountCreate"/>
+            <include name="SearchData"/>
+            <include name="ProductCheckout"/>
+            <include name="Downloadpdf"/>
+            <include name="InvalidDataCase"/>
+        </methods>
+        </class>
+
+        </classes>
+    </test>
+</suite>
